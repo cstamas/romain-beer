@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.cstamas.beer</groupId>
+        <artifactId>romain</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>module-b</artifactId>
+
+    <repositories>
+        <repository>
+            <id>fake2</id>
+            <url>https://raw.githubusercontent.com/cstamas/fake-repo/main/repo2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.cstamas.fake</groupId>
+            <artifactId>artifact</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+</project>
